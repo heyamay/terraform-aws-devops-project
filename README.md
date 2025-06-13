@@ -47,59 +47,6 @@ This project was built as a hands-on exercise to master core Terraform concepts 
 
 ## 📂 Project Structure
 
-Bahut khoob! Agar aapne pura project successfully complete kar liya hai, toh ab time hai isse duniya ko dikhane ka! Ek achha GitHub README aapke project ko showcase karne mein bahut help karega.
-
-Aapka project recall karte hain: Aapne Terraform aur AWS ka use karke ek complete VPC network (public/private subnets, IGW, NAT Gateway) aur uske andar EC2 instances (public/private) provision kiye hain. Iske liye aapne custom modules ka use kiya hai, Terraform state ko AWS S3 par manage kiya hai, aur secure practices follow ki hain (like .gitignore).
-
-Yahaan ek proper README.md ka code hai jo aap apne GitHub repository mein use kar sakte hain. Maine isko detailed aur easy-to-understand banaya hai:
-
-Markdown
-
-# Terraform AWS VPC & EC2 Project
-
----
-
-## 🚀 Project Overview
-
-This project demonstrates the provisioning of a robust and scalable AWS infrastructure using **Terraform**. It focuses on creating a custom Virtual Private Cloud (VPC) with public and private subnets, an Internet Gateway (IGW), a NAT Gateway, and deploying EC2 instances (both public-facing and private) within this network. The infrastructure is designed using **Terraform Modules** for reusability and maintainability, with **remote state management on AWS S3** for collaborative development and state locking.
-
-This project was built as a hands-on exercise to master core Terraform concepts and AWS networking essentials.
-
----
-
-## ✨ Key Features
-
-* **Custom VPC Network**: A fully configured VPC with a CIDR block of `10.0.0.0/16`.
-* **Public and Private Subnets**: Creation of distinct subnets across multiple Availability Zones for secure and flexible deployments.
-* **Internet Gateway (IGW)**: Enables communication between instances in public subnets and the internet.
-* **NAT Gateway**: Allows instances in private subnets to initiate outbound connections to the internet while remaining isolated from inbound connections.
-* **EC2 Instance Deployment**:
-    * **Public EC2 Instances**: Deployed in public subnets, accessible via SSH and hosting a basic Nginx web server.
-    * **Private EC2 Instance**: Deployed in a private subnet, accessible only from within the VPC (e.g., via a public bastion host).
-* **Terraform Custom Modules**:
-    * `vpc` module: Encapsulates all VPC-related resources (VPC, subnets, IGW, NAT Gateway, route tables).
-    * `ec2` module: Manages EC2 instance creation, including security groups and user data.
-    * Promotes code reusability and separation of concerns.
-* **Remote State Management**: Terraform state is stored securely in an **AWS S3 bucket** with DynamoDB for **state locking**, crucial for team environments.
-* **Security Best Practices**:
-    * No hardcoded AWS credentials (relies on AWS CLI configuration).
-    * `.gitignore` ensures sensitive files (`.tfstate`, `.terraform/`, `credentials`) are not committed to Git.
-* **Scalability**: Uses `count` and `for_each` (implicitly via dynamic blocks for security groups) to provision multiple resources efficiently.
-
----
-
-## 🛠️ Technologies Used
-
-* **Terraform**: Infrastructure as Code tool
-* **AWS (Amazon Web Services)**: Cloud Provider
-    * VPC (Virtual Private Cloud)
-    * EC2 (Elastic Compute Cloud)
-    * S3 (Simple Storage Service) for remote state
-    * DynamoDB (for state locking)
-    * IAM (Identity and Access Management)
-* **Bash/Shell Scripting**: For `user_data` to configure EC2 instances (e.g., Nginx installation).
-* **Git & GitHub**: Version control and code hosting.
-
 ---
 
 ## 📂 Project Structure
