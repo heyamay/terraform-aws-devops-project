@@ -46,11 +46,7 @@ This project was built as a hands-on exercise to master core Terraform concepts 
 ---
 
 ## 📂 Project Structure
-
----
-
-## 📂 Project Structure
-
+```text
 terraform-aws-project/
 ├── modules/
 │   ├── vpc/
@@ -65,7 +61,7 @@ terraform-aws-project/
 ├── variables.tf                # Root module: Top-level variables
 ├── outputs.tf                  # Root module: Top-level outputs from module calls
 └── .gitignore                  # Specifies files to ignore in Git
-
+```
 ---
 
 ## 🚀 Getting Started
