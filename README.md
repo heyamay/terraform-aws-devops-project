@@ -1,4 +1,16 @@
-# Terraform AWS VPC & EC2 Project
+# Terraform-Powered AWS VPC & EC2 with Remote State
+
+ab mere project ke liye teen pointer likho resume ke liye with added quantification and all services listed 
+
+i have sent you my github readme code above you can also take refrence from them
+
+pointers dekho itne hi chote hone chahiye taaki resume me adjust ho sake for refrence -
+
+ • Led the end-to-end development of a Jenkins-based CI/CD pipeline for a Java application, utilizing Docker for
+ containerized deployments on AWS EC2, resulting in a 30% improvement in deployment speed.
+ • Configured GitHub webhook triggers with Jenkins to initiate builds and container image pushes to AWS ECR,
+ achieving 100% automation in the build and deployment process.
+ • Integrated Prometheus, Grafana, and Alertmanager for monitoring and alerting, improving MTTD by 40%.
 
 ---
 
@@ -209,3 +221,10 @@ Feel free to fork this repository, experiment, and contribute to make it even be
 ## 📜 License
 
 This project is open-sourced under the [MIT License](LICENSE) (You might want to create a `LICENSE` file if you plan to share this broadly).
+
+## Resume 
+
+#### Terraform-Powered AWS VPC & EC2 with Remote State
+• Architected a secure AWS VPC using Terraform with 2 public and 1 private EC2 instance running Nginx, leveraging S3 for remote state and DynamoDB locking—cutting setup time by 50%.
+• Enabled 100% isolation for private EC2 by implementing bastion host access, allowing secure SSH into a private subnet within the Terraform-managed VPC.
+• Automated AWS infrastructure provisioning (VPC, EC2, S3, DynamoDB) via Terraform, streamlining deployments and eliminating manual configuration errors entirely.
