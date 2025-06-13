@@ -1,0 +1,24 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+.terraformrc
+terraform.rc
+
+# AWS CLI credentials (though not directly created by Terraform, good to keep in mind)
+.aws/credentials
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+cicd_keypair.pem
