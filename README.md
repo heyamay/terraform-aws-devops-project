@@ -1,17 +1,5 @@
 # Terraform-Powered AWS VPC & EC2 with Remote State
 
-ab mere project ke liye teen pointer likho resume ke liye with added quantification and all services listed 
-
-i have sent you my github readme code above you can also take refrence from them
-
-pointers dekho itne hi chote hone chahiye taaki resume me adjust ho sake for refrence -
-
- • Led the end-to-end development of a Jenkins-based CI/CD pipeline for a Java application, utilizing Docker for
- containerized deployments on AWS EC2, resulting in a 30% improvement in deployment speed.
- • Configured GitHub webhook triggers with Jenkins to initiate builds and container image pushes to AWS ECR,
- achieving 100% automation in the build and deployment process.
- • Integrated Prometheus, Grafana, and Alertmanager for monitoring and alerting, improving MTTD by 40%.
-
 ---
 
 ## 🚀 Project Overview
